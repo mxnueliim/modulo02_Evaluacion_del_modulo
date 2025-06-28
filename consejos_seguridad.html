@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
+<body class="consejosSeguridad">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="./inicio.html">Ciberseguridad</a>
@@ -30,23 +30,48 @@
         </div>
     </nav>
 
-    <div class="my-4 text-center">
-        <h1>Infórmate sobre buenas prácticas para protegerte mientras navegas</h1>
+    <div class="my-4">
+        <h1 class="text-center">Infórmate sobre buenas prácticas para protegerte mientras navegas</h1>
+        <ul class="fs-5 mx-2">
+            <li>Usar contraseñas fuertes y únicas</li>
+            <li>Activar la autenticación multifactor (MFA)</li>
+            <li>Actualizar software y sistemas regularmente</li>
+            <li>Evitar hacer clic en enlaces sospechosos</li>
+            <li>Realizar copias de seguridad frecuentes</li>
+        </ul>   
     </div>
 
+    
+
     <div id="formularioContacto">
-        <form action="">
+        <h2 class="text-center">Completa este formulario para ahondar en la temática</h2>
+        <form class="row g-3 needs-validation" novalidate>
             <div class="form-floating m-2">
-                <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
+                <input type="text" class="form-control" id="floatingName" placeholder="Nombre" value="" required>
                 <label for="floatingName">Nombre completo</label>
+                <div class="valid-feedback">
+                    ¡Perfecto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                </div>
             </div>
             <div class="form-floating m-2 mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Correo electrónico</label>
+                <div class="valid-feedback">
+                    ¡Perfecto!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor ingresa tu correo.
+                </div>
             </div>
             <div class=" m-2 mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                 <label class="form-check-label" for="exampleCheck1">Acepto suscribirme al boletín informativo</label>
+                <div class="invalid-feedback">
+                    Debes aceptar para continuar.
+                </div>
             </div>
             <button type="submit" class="m-2 btn btn-primary submitButton">Enviar</button>
         </form>
@@ -61,19 +86,51 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body m-2">
-                <form id="formConfirmación" action="">
-                    <label for="pagoTarjeta">Número de tarjeta</label>
-                    <input type="text" class="form-control mb-3" id="pagoTarjeta" placeholder="Número de tarjeta" required>
-                    <label for="pagoNombre">Nombre del titular</label>
-                    <input type="text" class="form-control mb-3" id="pagoNombre" placeholder="Nombre del titular" required>
-                    <label for="pagoCVV">CVV</label>
-                    <input type="text" class="form-control mb-3" id="pagoCVV" placeholder="CVV de tarjeta" required>
-                    <label for="pagoMonto">Monto</label>
-                    <input type="number" class="form-control mb-3" id="pagoMonto" placeholder="Ingrese monto" required>
+                <form id="formConfirmation" class="row g-3 needs-validation" novalidate>
+                    <div>
+                        <label for="pagoTarjeta">Número de tarjeta</label>
+                        <input type="text" class="form-control mb-3" id="pagoTarjeta" placeholder="Número de tarjeta" required>
+                        <div class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingresa el número de tarjeta.
+                        </div>
+                    </div>
+                    <div>
+                        <label for="pagoNombre">Nombre del titular</label>
+                        <input type="text" class="form-control mb-3" id="pagoNombre" placeholder="Nombre del titular" required>
+                        <div class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingresa el nombre del titular.
+                        </div>
+                    </div>
+                    <div>
+                        <label for="pagoCVV">CVV</label>
+                        <input type="text" class="form-control mb-3" id="pagoCVV" placeholder="CVV de tarjeta" required>
+                        <div class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Ingresa CVV
+                        </div>
+                    </div>
+                    <div>
+                        <label for="pagoMonto">Monto</label>
+                        <input type="number" class="form-control mb-3" id="pagoMonto" placeholder="Ingrese monto" required>
+                        <div class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div class="invalid-feedback">
+                            Monto sin agregar
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-success m-3 confirmButton" data-bs-dismiss="modal">Confirmar</button>
+                <button type="submit" class="btn btn-success m-3 confirmButton">Confirmar</button>
             </div>
             </div>
         </div>
