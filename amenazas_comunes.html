@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ciberseguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#navbar">Amenazas comúnes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./consejos_seguridad.html">Consejos de Seguridad</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-4 text-center">
+        <!-- Contenido principal -->
+        <div>
+            <h1>¿Sabías que?</h1>
+            <p class="mx-5 px-5">Los ataques cibernéticos más comunes incluyen el phishing, que engaña a los usuarios para que entreguen información confidencial mediante correos o sitios falsos; el ransomware, que bloquea el acceso a archivos hasta que se pague un rescate; el malware, que abarca programas maliciosos capaces de dañar sistemas o robar datos; y los ataques DDoS, que sobrecargan servidores con tráfico masivo para dejarlos fuera de servicio. Estos métodos representan serias amenazas para la seguridad digital y requieren medidas preventivas constantes.</p>
+        </div>
+        <!-- cards -->
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card m-3">
+                <div class="card-body">
+                    <h5 class="card-title">Phishing</h5>
+                    <p class="card-text">- Técnica de engaño que simula comunicaciones legítimas (como correos o sitios web).</p>
+                    <p class="card-text">- Busca obtener datos sensibles como contraseñas o información bancaria.</p>
+                    <p class="card-text">- Variantes: spear phishing (dirigido), smishing (SMS) y vishing (llamadas).</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card m-3">
+                <div class="card-body">
+                    <h5 class="card-title">Ransomware</h5>
+                    <p class="card-text">- Tipo de malware que cifra los archivos del sistema y exige un rescate para liberarlos. </p>
+                    <p class="card-text">- Suele propagarse por correos maliciosos o descargas inseguras. </p>
+                    <p class="card-text">- Ejemplo famoso: WannaCry afectó a miles de sistemas en 2017.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card m-3">
+                <div class="card-body">
+                    <h5 class="card-title">Malware</h5>
+                    <p class="card-text">- Término general para software malicioso: virus, troyanos, spyware, etc. </p>
+                    <p class="card-text">- Puede robar información, dañar archivos o controlar el sistema. </p>
+                    <p class="card-text">- Se instala al ejecutar archivos infectados o visitar sitios comprometidos.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card m-3">
+                <div class="card-body">
+                    <h5 class="card-title">Ataques DDoS </h5>
+                    <p class="card-text">- Inundan un servidor con tráfico falso desde múltiples dispositivos. </p>
+                    <p class="card-text">- Objetivo: saturar el sistema y dejarlo fuera de servicio. </p>
+                    <p class="card-text">- Afectan principalmente a sitios web de empresas o servicios públicos.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="mx-5 mb-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Phishing
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Caso Gmail (2017):</strong>
+                    Un ataque masivo simuló invitaciones legítimas de Google Docs. Al hacer clic,
+                    los usuarios eran redirigidos a una página falsa de inicio de sesión de Google, 
+                    donde los atacantes robaban sus credenciales.
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ransomware
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Caso WannaCry (2017):</strong>
+                    Este ransomware se propagó globalmente en cuestión de horas, afectando a más de 200,000 sistemas en 150 países. 
+                    El Servicio Nacional de Salud del Reino Unido fue uno de los más perjudicados, con miles de citas médicas canceladas.
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Malware
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Caso Stuxnet (2010):</strong>
+                    Un gusano informático diseñado para sabotear instalaciones nucleares en Irán. 
+                    Infectó sistemas industriales mediante vulnerabilidades de día cero, causando daños físicos a centrifugadoras.
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Ataque DDoS
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Caso DynDNS (2016):</strong>
+                        Una botnet llamada Mirai utilizó dispositivos IoT para lanzar un ataque DDoS masivo contra Dyn,
+                        un proveedor de DNS. Esto dejó fuera de servicio a sitios como Twitter, Netflix y Reddit durante horas.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
